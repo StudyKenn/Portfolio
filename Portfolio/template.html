@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  
+    <nav>
+        <ul class="mobile-bar">
+            <li onclick=HideSideBar()><a><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+
+        <ul>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="36" viewBox="0 -960 960 960" width="36" fill="white"><path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg></a></li>
+            <li class="hideOnMobile"><a href="#">About</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Resume</a></li>
+            <li class="menu-button" onclick=ShowSideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+   <div class=grafitti>
+        <h1 class="grafitti-first"><span class="k">K</span><span class="e">E</span><span class="n">N</span><span class="n2">N</span><span class="e2">E</span><span class="d">D</span><span class="y">Y</span><span class=blank></span></h1>
+
+        <h1 class="grafitti-last"><span class="a">A</span><span class="m">M</span><span class="u">U</span><span class="c">C</span><span class="h">H</span><span class="a2">A</span></h1>
+    
+    </div>
+
+    <p id="desc">
+       I am creative at heart, but I found my true passion for design through developing websites and mobile apps <br> From portfolios to company sites I enjoy creating them all and above most; I love seeing the satisfaction, purpose and joy my designs bring to others.
+    </p>
+
+    <div class="therest">
+
+        <div class="project">
+            <img src="images/design4.jpg" class="project-img">
+            <a href="#" class="project-overlay">
+                <p class="project-text">Projects</p>
+            </a>
+        </div>
+        <div class="resume">
+            <img src="images/resume3.jpg"class="resume-img">
+            <a href="#" class="resume-overlay">
+                <p class="resume-text">Resume</p>
+            </a>
+        </div>
+
+    </div>
+    </main>
+        
+    <footer>
+        <ul>
+            <li><a href="mailto:kenamucha@outlook.com">kenamucha@outlook.com</a></li>
+            <li><a href="https://www.linkedin.com/in/kennedy-amucha-1257ab294/"><img src="images/linked-in2.png" alt="linkedin logo"></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        function ShowSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "flex"
+        }
+
+        function HideSideBar() {
+            const mobilebar = document.querySelector('.mobile-bar')
+            mobilebar.style.display = "none"
+        }
+
+    </script>
+
+</body>
+</html>
